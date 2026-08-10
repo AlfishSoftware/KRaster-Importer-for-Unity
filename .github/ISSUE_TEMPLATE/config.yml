@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+	- name: Forum
+		url: https://github.com/AlfishSoftware/KRaster-Importer-for-Unity/discussions
+		about: Use the discussions page to ask public questions if the wiki does not help.
+	- name: Private Support
+		url: https://discussions.unity.com/u/alfish
+		about: For customer support, you can send a private message on Unity Discussions.
