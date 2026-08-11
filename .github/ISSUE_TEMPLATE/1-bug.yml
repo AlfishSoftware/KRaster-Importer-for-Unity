@@ -1,0 +1,102 @@
+name: Bug Report
+description: Create a public report about something not working correctly.
+labels: ['bug']
+assignees: ['AlfishSoftware']
+type: bug
+body:
+  - type: markdown
+    attributes: value: |
+      ### Before you begin
+      1. Confirm that your issue hasn't already been reported.
+      2. Confirm that you upgraded to the latest patch version of Unity and Krita.
+      3. Confirm that the issue isn't caused by some bug in Unity or Krita itself or some unrelated factor (e.g. your project or its dependencies):
+        - Does it happen consistently every time or was it a one-time issue?
+        - Does it happen on an empty project?
+        - Have you changed settings or done anything specific or unusual?
+  - type: textarea
+    id: description
+    validations: required: true
+    attributes:
+      label: Bug description
+      description: A clear and concise description of what the bug is.
+  - type: input
+    id: v
+    validations: required: true
+    attributes:
+      label: Plugin version
+      description: |
+        For example: `v0.4.1-free` (if free previewer) or `v0.4.2` (if full importer).
+        Confirm that you're running the latest version before submitting a bug report.
+      placeholder: vX.Y.Z
+  - type: input
+    id: unity
+    validations: required: true
+    attributes:
+      label: Unity version
+      placeholder: WWWW.X.YfZ
+  - type: input
+    id: krita
+    validations: required: true
+    attributes:
+      label: Krita version
+      description: |
+        Version and app store where you downloaded Krita from.
+        E.g.: `v6.0.1 Microsoft`, `v5.3.2.1 Flathub`, `not installed`.
+      placeholder: vX.Y.Z Store
+  - type: textarea
+    id: os
+    validations: required: true
+    attributes:
+      label: Operating system
+      description: |
+        System info like OS, version, CPU architecture, RAM, GPU, etc. Example:
+        - Windows: Hit <kbd>Windows</kbd>+<kbd>Pause</kbd> and copy relevant Windows specifications and Device specifications.
+        - Ubuntu: On System Settings, look for "About", "Info Center" or "System Information" and copy the info.
+        - macOS: Apple menu > "About This Mac".
+      render: txt
+      placeholder: |
+        Operating System: Kubuntu 26.04 x64
+        Graphics Platform: Wayland
+        Processors: 4x Intel Core i5-5300U CPU @ 2.30GHz
+        Memory: 12 GiB of RAM
+        Graphics Processor: Intel HD Graphics 5500
+  - type: upload
+    id: mcve
+    attributes:
+      label: Attachments
+      description: |
+        If applicable.
+        You can add test images that cause the issue, a zipped MCVE (minimal, complete and verifiable example), etc.
+        You can also add screenshots to help explain your problem, if needed.
+  - type: textarea
+    id: repro
+    validations: required: true
+    attributes:
+      label: Steps to reproduce
+      description: |
+        Include all the necessary info and steps to reproduce the issue.
+      value: '1. '
+  - type: textarea
+    id: expect
+    validations: required: true
+    attributes:
+      label: Expected and actual result
+      placeholder: |
+        This should happen, but instead ...
+  - type: textarea
+    id: misc
+    attributes:
+      label: Additional info
+      description: |
+        If applicable.
+      placeholder: |
+        It actually works if I blah blah ...  
+        I think it might be related to blah blah, etc.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error messages
+      description: |
+        If applicable.
+        If there are error messages or logs related to the bug, paste the exact text here.
+      render: txt
