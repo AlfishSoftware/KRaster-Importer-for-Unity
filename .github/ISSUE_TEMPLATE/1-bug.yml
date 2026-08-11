@@ -10,9 +10,9 @@ body:
         1. Confirm that your issue hasn't already been reported.
         2. Confirm that you upgraded to the latest patch version of Unity and Krita.
         3. Confirm that the issue isn't caused by some bug in Unity or Krita itself or some unrelated factor (e.g. your project or its dependencies):
-          - Does it happen consistently every time or was it a one-time issue?
-          - Does it happen on an empty project?
-          - Have you changed settings or done anything specific or unusual?
+            - Does it happen consistently every time or was it a one-time issue?
+            - Does it happen on an empty project?
+            - Have you changed settings or done anything specific or unusual?
   - type: textarea
     id: description
     validations:
@@ -27,8 +27,8 @@ body:
     attributes:
       label: Plugin version
       description: |
-        For example: `v0.4.1-free` (if free previewer) or `v0.4.2` (if full importer).
-        Confirm that you're running the latest version before submitting a bug report.
+        For example: `v0.4.1-free` (if free previewer) or `v0.4.2` (if full importer).  
+        Upgrade to the latest version before submitting a bug report.
       placeholder: vX.Y.Z
   - type: input
     id: unity
@@ -36,7 +36,9 @@ body:
       required: true
     attributes:
       label: Unity version
-      placeholder: WWWW.X.YfZ
+      description: |
+        For example: `Unity 6000.3.18f1`
+      placeholder: Unity WWWW.X.YfZ
   - type: input
     id: krita
     validations:
@@ -44,8 +46,8 @@ body:
     attributes:
       label: Krita version
       description: |
-        Version and app store where you downloaded Krita from.
-        E.g.: `v6.0.1 Microsoft`, `v5.3.2.1 Flathub`, `not installed`.
+        Version and app store where you downloaded Krita from.  
+        E.g.: `v6.0.1 Microsoft Store`, `v5.3.2.1 Flathub`, `not installed`.
       placeholder: vX.Y.Z Store
   - type: textarea
     id: os
@@ -70,9 +72,9 @@ body:
     attributes:
       label: Attachments
       description: |
-        If applicable.
-        You can add test images that cause the issue, a zipped MCVE (minimal, complete and verifiable example), etc.
-        You can also add screenshots to help explain your problem, if needed.
+        If applicable.  
+        You can add a zip with test images that cause the issue or a MCVE (minimal, complete and verifiable example).  
+        You can also add screenshots or a video to help explain your problem, if needed.
   - type: textarea
     id: repro
     validations:
@@ -88,6 +90,8 @@ body:
       required: true
     attributes:
       label: Expected and actual result
+      description: |
+        What did you expect to happen after performing the steps above? What is actually happening?
       placeholder: |
         This should happen, but instead ...
   - type: textarea
@@ -97,13 +101,13 @@ body:
       description: |
         If applicable.
       placeholder: |
-        It actually works if I blah blah ...  
+        It actually works if I blah blah ...
         I think it might be related to blah blah, etc.
   - type: textarea
     id: logs
     attributes:
       label: Error messages
       description: |
-        If applicable.
+        If applicable.  
         If there are error messages or logs related to the bug, paste the exact text here.
       render: txt
