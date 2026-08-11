@@ -2,7 +2,6 @@ name: Bug Report
 description: Create a public report about something not working correctly.
 labels: ['bug']
 assignees: ['AlfishSoftware']
-type: bug
 body:
   - type: markdown
     attributes:
