@@ -5,14 +5,15 @@ assignees: ['AlfishSoftware']
 type: bug
 body:
   - type: markdown
-    attributes: value: |
-      ### Before you begin
-      1. Confirm that your issue hasn't already been reported.
-      2. Confirm that you upgraded to the latest patch version of Unity and Krita.
-      3. Confirm that the issue isn't caused by some bug in Unity or Krita itself or some unrelated factor (e.g. your project or its dependencies):
-        - Does it happen consistently every time or was it a one-time issue?
-        - Does it happen on an empty project?
-        - Have you changed settings or done anything specific or unusual?
+    attributes:
+      value: |
+        ### Before you begin
+        1. Confirm that your issue hasn't already been reported.
+        2. Confirm that you upgraded to the latest patch version of Unity and Krita.
+        3. Confirm that the issue isn't caused by some bug in Unity or Krita itself or some unrelated factor (e.g. your project or its dependencies):
+          - Does it happen consistently every time or was it a one-time issue?
+          - Does it happen on an empty project?
+          - Have you changed settings or done anything specific or unusual?
   - type: textarea
     id: description
     validations: required: true
