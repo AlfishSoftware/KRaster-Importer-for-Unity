@@ -16,13 +16,15 @@ body:
           - Have you changed settings or done anything specific or unusual?
   - type: textarea
     id: description
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Bug description
       description: A clear and concise description of what the bug is.
   - type: input
     id: v
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Plugin version
       description: |
@@ -31,13 +33,15 @@ body:
       placeholder: vX.Y.Z
   - type: input
     id: unity
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Unity version
       placeholder: WWWW.X.YfZ
   - type: input
     id: krita
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Krita version
       description: |
@@ -46,7 +50,8 @@ body:
       placeholder: vX.Y.Z Store
   - type: textarea
     id: os
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Operating system
       description: |
@@ -71,7 +76,8 @@ body:
         You can also add screenshots to help explain your problem, if needed.
   - type: textarea
     id: repro
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Steps to reproduce
       description: |
@@ -79,7 +85,8 @@ body:
       value: '1. '
   - type: textarea
     id: expect
-    validations: required: true
+    validations:
+      required: true
     attributes:
       label: Expected and actual result
       placeholder: |
